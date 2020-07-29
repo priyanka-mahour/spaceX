@@ -31,7 +31,7 @@ function Cards(props) {
                     ))}
                     {data.length > 0 && showMoreCount > 0 ?
                         <div className="flex alignCenter">
-                            <div className="pagination" onClick={showMore}>{`showmore ${showMoreCount}`}</div>
+                            <div className="pagination cursorPointer" onClick={showMore}>{`showmore ${showMoreCount}`}</div>
                         </div> :
                         <> {data.length === 0 ? <div className="noData flex alignCenter">No Data Found!!!!!!</div> : <>
                             {typeof allData != "undefined" &&

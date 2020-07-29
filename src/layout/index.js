@@ -98,7 +98,7 @@ function Layout(props) {
                         <div className="inputBox">
                             <input className="input" placeholder="Search" onChange={(e) => searchFn(e)} />
                             {typeof document.getElementsByTagName("input") !== "undefined" && typeof document.getElementsByTagName("input")[0] !== "undefined" && document.getElementsByTagName("input")[0].value.length > 0 &&
-                                <span className="crossBtn" onClick={clearData}>X</span>
+                                <span className="crossBtn cursorPointer" onClick={clearData}>X</span>
                             }
                         </div>
                     </div>
